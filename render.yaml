@@ -7,7 +7,7 @@ services:
     plan: free # שנה ל-"starter" או גבוה יותר לפרודקשן
     region: frankfurt # אזור קרוב לישראל; אפשרויות נוספות: oregon, ohio, virginia, singapore
     # התקנה + בנייה. Render מזהה pnpm אוטומטית לפי pnpm-lock.yaml
-    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    corepack enable && pnpm install --frozen-lockfile && pnpm build
     startCommand: pnpm start
     autoDeploy: true # פריסה אוטומטית בכל push לענף
     envVars:
