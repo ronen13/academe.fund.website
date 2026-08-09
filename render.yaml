@@ -1,0 +1,17 @@
+# Render Blueprint for AcadeMe.Fund (Next.js)
+# Docs: https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: academe-fund
+    runtime: node
+    plan: free # שנה ל-"starter" או גבוה יותר לפרודקשן
+    region: frankfurt # אזור קרוב לישראל; אפשרויות נוספות: oregon, ohio, virginia, singapore
+    # התקנה + בנייה. Render מזהה pnpm אוטומטית לפי pnpm-lock.yaml
+    buildCommand: corepack enable && pnpm install --frozen-lockfile && pnpm build
+    startCommand: pnpm start
+    autoDeploy: true # פריסה אוטומטית בכל push לענף
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      - key: NODE_ENV
+        value: production
