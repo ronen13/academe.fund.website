@@ -1,25 +1,24 @@
 "use client"
-
-import { GraduationCap, Languages } from "lucide-react"
+import Image from "next/image"
+import { Languages } from "lucide-react"
 import { useLang } from "@/lib/i18n"
 import { Button, buttonVariants } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
-
 export function SiteHeader() {
   const { lang, setLang, t } = useLang()
-
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
         <a href="#top" className="flex items-center gap-2">
-          <span className="flex h-9 w-9 items-center justify-center rounded-lg bg-primary text-primary-foreground">
-            <GraduationCap className="h-5 w-5" aria-hidden="true" />
-          </span>
-          <span className="font-heading text-lg font-bold tracking-tight text-foreground">
-            AcadeMe<span className="text-accent">.Fund</span>
-          </span>
+          <Image
+            src="/images/logo.png"
+            alt="AcadeMe.Fund"
+            width={1942}
+            height={475}
+            priority
+            className="h-8 w-auto md:h-9"
+          />
         </a>
-
         <nav className="hidden items-center gap-7 md:flex">
           <a href="#how" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
             {t.nav.how}
@@ -34,7 +33,6 @@ export function SiteHeader() {
             {t.nav.faq}
           </a>
         </nav>
-
         <div className="flex items-center gap-2">
           <Button
             variant="ghost"
@@ -47,7 +45,7 @@ export function SiteHeader() {
             <span className="text-sm font-semibold">{lang === "he" ? "EN" : "עב"}</span>
           </Button>
           <a
-            href="#start"
+            href="/coupon"
             className={cn(
               buttonVariants({ size: "sm" }),
               "hidden bg-primary text-primary-foreground hover:bg-primary/90 sm:inline-flex",
