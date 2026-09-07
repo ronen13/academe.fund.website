@@ -72,10 +72,10 @@ export const content: Record<Lang, Content> = {
     },
     hero: {
       badge: "התאמה אישית למלגות וסיוע כלכלי",
-      title: "המימון ללימודים שלכם",
-      titleAccent: "מתחיל באמון וליווי",
+      title: "הדרך החכמה וההוליסטית שלך",
+      titleAccent: "למימון התואר",
       subtitle:
-        "שאלון קצר וחכם מתאים לכם את המלגות והסיוע הכלכלי הרלוונטיים ביותר — ומלווה אתכם צעד־צעד עד לקבלה, בשקיפות מלאה וללא עלות.",
+        "שאלון אחד שממפה עבורך את כל המלגות, מענקי המחייה והסיוע הכלכלי בישראל — בהתאמה אישית מדויקת, בשקיפות מלאה וללא עלות.",
       primaryCta: "התחילו את השאלון",
       secondaryCta: "איך זה עובד",
       note: "ללא עלות · ללא התחייבות · 4 דקות",
@@ -89,7 +89,7 @@ export const content: Record<Lang, Content> = {
       heading: "בונים אמון בכל שלב",
       items: [
         "הנתונים שלכם מוצפנים ונשארים שלכם",
-        "בליווי יועצי סיוע כלכלי",
+        "מיפוי הוליסטי מבוסס נתונים",
         "שקיפות מלאה בקריטריונים",
         "ללא עמלות נסתרות",
       ],
@@ -107,8 +107,8 @@ export const content: Record<Lang, Content> = {
           body: "המערכת סורקת אלפי מסלולים ומדרגת עבורכם את המלגות עם הסיכוי הגבוה ביותר.",
         },
         {
-          title: "מגישים בליווי צמוד",
-          body: "מלווים אתכם בכל שלב של ההגשה — מהמסמכים ועד לתשובה, עם תזכורות ותמיכה.",
+          title: "מגישים בביטחון",
+          body: "לכל מלגה מוכן עבורכם checklist מותאם אישית — מה נדרש, מה הסטטוס, ומתי הדדליין.",
         },
       ],
     },
@@ -121,8 +121,8 @@ export const content: Record<Lang, Content> = {
           body: "אלגוריתם שמכיר את הקריטריונים לעומק ומדרג לפי הסיכוי האמיתי שלכם.",
         },
         {
-          title: "ליווי אנושי",
-          body: "צוות יועצים זמין למענה, כי מאחורי כל שאלה עומד אדם, לא רק טופס.",
+          title: "מיפוי הוליסטי",
+          body: "כל מקורות המימון האפשריים במקום אחד — מלגות, מענקי מחייה וסיוע כלכלי.",
         },
         {
           title: "שקיפות מלאה",
@@ -135,16 +135,16 @@ export const content: Record<Lang, Content> = {
       ],
     },
     guidance: {
-      badge: "ליווי אישי",
-      heading: "לא משאירים אתכם לבד מול הטפסים",
-      body: "אנחנו מאמינים שסיוע כלכלי הוא לא רק כסף — הוא ביטחון להתקדם. לכן לכל סטודנט יש ליווי אמיתי לאורך כל הדרך.",
+      badge: "התאמה אישית מלאה",
+      heading: "כל מסלולי המימון שלכם, במקום אחד",
+      body: "אנחנו ממפים עבורכם באופן הוליסטי את כל המלגות, מענקי המחייה וסיוע הכלכלי הרלוונטיים — וההתאמה מתדייקת ככל שאנחנו מכירים אתכם יותר.",
       points: [
-        "יועץ אישי שמכיר את התיק שלכם",
-        "תזכורות אוטומטיות לפני כל דדליין",
-        "בדיקת מסמכים לפני הגשה",
-        "מענה לשאלות בעברית ובאנגלית",
+        "מיפוי חכם של כל מקורות המימון בישראל",
+        "דירוג לפי הסיכוי האמיתי שלכם",
+        "עדכון אוטומטי כשנפתחים מסלולים חדשים",
+        "ממשק אחד בעברית ובאנגלית",
       ],
-      cta: "דברו עם יועץ",
+      cta: "גלו את ההתאמה שלכם",
     },
     testimonials: {
       heading: "סטודנטים מספרים",
@@ -158,7 +158,7 @@ export const content: Record<Lang, Content> = {
         },
         {
           quote:
-            "הליווי עשה את ההבדל. מישהו באמת ישב איתי על הטפסים והסביר כל שלב. הרגשתי שיש לי גב.",
+            "הרשימה שקיבלתי הייתה מדויקת בול למצב שלי. לא בזבזתי זמן על מלגות שלא רלוונטיות אליי.",
           name: "יוסף א.",
           role: "סטודנט למשפטים",
         },
@@ -176,7 +176,7 @@ export const content: Record<Lang, Content> = {
       items: [
         {
           q: "האם השירות באמת בחינם?",
-          a: "כן. מילוי השאלון, ההתאמה והליווי הבסיסי ניתנים ללא עלות וללא התחייבות.",
+          a: "כן. מילוי השאלון, ההתאמה וקבלת התוצאות ניתנים ללא עלות וללא התחייבות.",
         },
         {
           q: "מה קורה עם הנתונים שלי?",
@@ -188,18 +188,18 @@ export const content: Record<Lang, Content> = {
         },
         {
           q: "האם אני מתחייב להגיש למלגות שהותאמו לי?",
-          a: "בכלל לא. אתם מקבלים המלצות ובוחרים בעצמכם למה להגיש. אנחנו רק מלווים.",
+          a: "בכלל לא. אתם מקבלים המלצות ובוחרים בעצמכם למה להגיש. ההחלטה תמיד שלכם.",
         },
       ],
     },
     finalCta: {
       heading: "המלגה הבאה שלכם מחכה",
-      body: "התחילו עכשיו את השאלון ותנו לנו ללוות אתכם עד לקבלה.",
+      body: "התחילו עכשיו את השאלון ותנו לנו למפות עבורכם את כל אפשרויות המימון עד לקבלה.",
       button: "התחילו את השאלון",
       note: "ללא עלות · 4 דקות · תוצאות מיידיות",
     },
     footer: {
-      tagline: "מלווים סטודנטים אל המימון שמגיע להם.",
+      tagline: "ממפים לכל סטודנט את המימון שמגיע לו.",
       rights: "כל הזכויות שמורות.",
       links: ["פרטיות", "תנאי שימוש", "צור קשר"],
     },
@@ -215,10 +215,10 @@ export const content: Record<Lang, Content> = {
     },
     hero: {
       badge: "Personalized scholarship & financial-aid matching",
-      title: "Funding your studies",
-      titleAccent: "starts with trust & guidance",
+      title: "The smart, holistic way",
+      titleAccent: "to fund your degree",
       subtitle:
-        "A short, smart questionnaire matches you with the most relevant scholarships and aid — and guides you step by step to acceptance, with full transparency and no cost.",
+        "One questionnaire maps out every scholarship, living-expense grant, and financial-aid program in Israel for you — with precise personalization, full transparency, and no cost.",
       primaryCta: "Start the questionnaire",
       secondaryCta: "How it works",
       note: "Free · No commitment · 4 minutes",
@@ -232,7 +232,7 @@ export const content: Record<Lang, Content> = {
       heading: "Building trust at every step",
       items: [
         "Your data is encrypted and stays yours",
-        "Backed by financial-aid advisors",
+        "Holistic, data-driven mapping",
         "Full transparency on criteria",
         "No hidden fees",
       ],
@@ -251,8 +251,8 @@ export const content: Record<Lang, Content> = {
           body: "Our system scans thousands of programs and ranks the scholarships you're most likely to win.",
         },
         {
-          title: "Apply with close guidance",
-          body: "We guide you through every stage of the application — from documents to decision, with reminders and support.",
+          title: "Apply with confidence",
+          body: "Every scholarship comes with a personalized checklist — what's required, current status, and the deadline.",
         },
       ],
     },
@@ -266,8 +266,8 @@ export const content: Record<Lang, Content> = {
           body: "An algorithm that understands the criteria deeply and ranks by your real chances.",
         },
         {
-          title: "Human guidance",
-          body: "A team of advisors ready to help, because behind every question is a person, not just a form.",
+          title: "Holistic mapping",
+          body: "Every funding source in one place — scholarships, living-expense grants, and financial aid.",
         },
         {
           title: "Full transparency",
@@ -280,16 +280,16 @@ export const content: Record<Lang, Content> = {
       ],
     },
     guidance: {
-      badge: "Personal guidance",
-      heading: "We don't leave you alone with the forms",
-      body: "We believe financial aid isn't just money — it's the confidence to move forward. That's why every student gets real guidance the whole way.",
+      badge: "Fully personalized",
+      heading: "Every funding path, in one place",
+      body: "We holistically map out every scholarship, living-expense grant, and financial-aid program relevant to you — and the match gets sharper the more we learn about you.",
       points: [
-        "A personal advisor who knows your case",
-        "Automatic reminders before every deadline",
-        "Document review before submission",
-        "Support in both Hebrew and English",
+        "Smart mapping of every funding source in Israel",
+        "Ranked by your real chances",
+        "Automatic updates when new programs open",
+        "One interface, in Hebrew and English",
       ],
-      cta: "Talk to an advisor",
+      cta: "See your match",
     },
     testimonials: {
       heading: "What students say",
@@ -303,7 +303,7 @@ export const content: Record<Lang, Content> = {
         },
         {
           quote:
-            "The guidance made the difference. Someone actually sat with me on the forms and explained every step. I felt supported.",
+            "The list I got was spot-on for my exact situation. I didn't waste time on scholarships that weren't relevant to me.",
           name: "Yosef A.",
           role: "Law student",
         },
@@ -321,7 +321,7 @@ export const content: Record<Lang, Content> = {
       items: [
         {
           q: "Is the service really free?",
-          a: "Yes. Filling the questionnaire, matching, and basic guidance are all free with no commitment.",
+          a: "Yes. Filling the questionnaire, matching, and getting your results are all free with no commitment.",
         },
         {
           q: "What happens to my data?",
@@ -333,18 +333,18 @@ export const content: Record<Lang, Content> = {
         },
         {
           q: "Am I obligated to apply to my matches?",
-          a: "Not at all. You get recommendations and choose what to apply for yourself. We just guide you.",
+          a: "Not at all. You get recommendations and choose what to apply for yourself. The decision is always yours.",
         },
       ],
     },
     finalCta: {
       heading: "Your next scholarship is waiting",
-      body: "Start the questionnaire now and let us guide you all the way to acceptance.",
+      body: "Start the questionnaire now and let us map out every funding option for you, all the way to acceptance.",
       button: "Start the questionnaire",
       note: "Free · 4 minutes · Instant results",
     },
     footer: {
-      tagline: "Guiding students to the funding they deserve.",
+      tagline: "Mapping every student's path to the funding they deserve.",
       rights: "All rights reserved.",
       links: ["Privacy", "Terms", "Contact"],
     },
