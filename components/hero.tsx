@@ -31,8 +31,8 @@ export function Hero() {
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
-              href="#start"
-              className={cn(
+            href="/coupon"
+            className={cn(
                 buttonVariants({ size: "lg" }),
                 "group gap-2 bg-primary text-base text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90",
               )}
