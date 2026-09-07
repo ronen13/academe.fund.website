@@ -20,7 +20,7 @@ export function FinalCta() {
           {t.finalCta.body}
         </p>
         <a
-          href="#top"
+          href="/coupon"
           className={cn(
             buttonVariants({ size: "lg" }),
             "group mt-8 gap-2 bg-primary text-base text-primary-foreground shadow-lg shadow-primary/20 hover:bg-primary/90",
