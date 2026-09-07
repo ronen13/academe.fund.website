@@ -11,7 +11,7 @@ export function SiteHeader() {
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6">
         <a href="#top" className="flex items-center gap-2">
           <Image
-            src="/images/logo.png"
+            src="/images/academe-fund-logo.png"
             alt="AcadeMe.Fund"
             width={1942}
             height={475}
