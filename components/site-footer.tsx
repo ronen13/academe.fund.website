@@ -18,24 +18,14 @@ export function SiteFooter() {
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
           {t.footer.links.map((link) => (
-            
-              key={link}
-              href="#"
-              className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
+            <a key={link} href="#" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
               {link}
             </a>
           ))}
-          
-            href="/institutions.html"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <a href="/institutions.html" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             למוסדות אקדמיים
           </a>
-          
-            href="/partners.html"
-            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-          >
+          <a href="/partners.html" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             לגופים פיננסיים ופילנתרופיים
           </a>
         </nav>
