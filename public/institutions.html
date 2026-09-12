@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AcadeMe.Fund — עבור המוסדות האקדמיים</title>
+<meta name="description" content="פלטפורמת AcadeMe.Fund עבור מוסדות אקדמיים: מניעת נשירה כלכלית ומעטפת ליווי מבוססת דאטה לסטודנטים.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;800;900&family=Heebo:wght@400;500;600;700&display=swap');
+
+:root{
+  --bg:#ffffff;
+  --surface-alt:#f7f9fc;
+  --blue-800:#0f2e73;
+  --blue-700:#15398f;
+  --blue-600:#1c4fbf;
+  --blue-400:#6e8fd6;
+  --orange-700:#c4560c;
+  --orange-600:#e8690f;
+  --orange-500:#f5821f;
+  --orange-300:#f7a75c;
+  --orange-100:#fdead2;
+  --radius-lg:22px;
+  --radius-sm:8px;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--bg);
+  color:var(--blue-700);
+  font-family:'Heebo', sans-serif;
+  direction:rtl;
+}
+.wrap{ max-width:760px; margin:0 auto; padding:48px 20px 80px; }
+.brand{ display:flex; align-items:center; justify-content:center; gap:10px; margin-bottom:34px; }
+.brand .name{ font-family:'Rubik', sans-serif; font-size:23px; font-weight:700; color:var(--blue-800); }
+.brand .name b{ color:var(--orange-600); }
+h1{
+  font-family:'Rubik', sans-serif;
+  font-size:clamp(26px,4vw,34px);
+  line-height:1.3;
+  color:var(--blue-800);
+  text-align:center;
+  margin:0 0 8px;
+}
+.tagline{ text-align:center; color:var(--blue-400); font-size:16px; margin:0 0 36px; }
+.card{
+  background:#fff;
+  border:1.5px solid var(--orange-500);
+  border-radius:var(--radius-lg);
+  padding:34px 32px;
+  margin-bottom:24px;
+  box-shadow:0 24px 60px -28px rgba(28,79,191,.18);
+}
+.card h2{ font-family:'Rubik', sans-serif; color:var(--orange-600); font-size:20px; margin:0 0 14px; }
+.card p{ line-height:1.8; font-size:16px; margin:0 0 16px; }
+.card ul{ margin:0 0 16px; padding-inline-start:20px; line-height:1.9; }
+form{ margin-top:10px; }
+.grid-2{ display:grid; grid-template-columns:1fr; gap:14px; }
+@media (min-width:560px){ .grid-2{grid-template-columns:1fr 1fr;} }
+input[type="text"], input[type="tel"], input[type="email"]{
+  width:100%;
+  background:var(--surface-alt);
+  border:1.5px solid var(--orange-300);
+  color:var(--blue-800);
+  border-radius:var(--radius-sm);
+  padding:13px 15px;
+  font-family:'Heebo', sans-serif;
+  font-size:16px;
+}
+input:focus{ outline:none; border-color:var(--orange-600); box-shadow:0 0 0 3px rgba(232,105,15,.15); }
+.btn-row{ margin-top:20px; }
+.btn{
+  font-family:'Heebo', sans-serif; font-weight:700; font-size:17px;
+  border:none; cursor:pointer; border-radius:999px; padding:15px 34px;
+  background:linear-gradient(180deg, var(--orange-500), var(--orange-600));
+  color:#fff;
+  box-shadow:0 10px 26px -10px rgba(232,105,15,.55);
+}
+.btn:disabled{ opacity:.5; cursor:not-allowed; }
+.success{ display:none; text-align:center; padding:20px 0; }
+.success.show{ display:block; }
+.success h3{ font-family:'Rubik', sans-serif; color:var(--blue-800); font-size:22px; }
+.success p{ color:var(--blue-600); }
+.error-banner{
+  background:rgba(201,74,58,.08); border:1px solid rgba(201,74,58,.4);
+  color:#c94a3a; border-radius:var(--radius-sm); padding:12px 16px;
+  font-size:14.5px; margin-top:14px; display:none;
+}
+.error-banner.show{ display:block; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <div class="name">Acade<b>Me</b>.Fund</div>
+  </div>
+
+  <h1>AcadeMe.Fund עבור המוסדות האקדמיים</h1>
+  <p class="tagline">כי מגיע לכל אחד סיכוי הוגן ללמוד — בלי להיאבד בין הטפסים.</p>
+
+  <div class="card">
+    <h2>מהפכת מצוינות מכלילה בקמפוס</h2>
+    <p>
+      AcadeMe.Fund מובילים את מהפכת המצוינות המכלילה בקמפוס: פלטפורמה מוסדית אחת המונעת נשירה כלכלית אקטיבית,
+      ומעניקה לסטודנטים שלכם את המעטפת וליווי שלכם מבוססת דאטה.
+    </p>
+    <p>
+      <strong>מצוינות מכלילה ומניעת נשירה הלכה למעשה</strong> — תרגמו את חזון המל״ג וההות״ת לכלי טכנולוגי יישים.
+    </p>
+    <p>
+      הפלטפורמה מאפשרת לכם להעניק מעטפת ליווי הוליסטית לאוכלוסיות מגוונות (פריפריה, חרדים, חברה ערבית, דור ראשון
+      באקדמיה) ולמנוע נשירה על רקע כלכלי עוד לפני היווצרות המשבר.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>השאירו פרטים</h2>
+    <form id="leadForm">
+      <div class="grid-2">
+        <input type="text" name="full_name" placeholder="שם" required>
+        <input type="text" name="institution" placeholder="מוסד" required>
+      </div>
+      <div class="grid-2" style="margin-top:14px;">
+        <input type="tel" name="phone" placeholder="טלפון" required>
+        <input type="email" name="email" placeholder="אי-מייל" required>
+      </div>
+      <div class="error-banner" id="errorBanner">אירעה שגיאה בשליחה. אפשר לנסות שוב.</div>
+      <div class="btn-row">
+        <button type="submit" class="btn" id="btnSubmit">שליחה</button>
+      </div>
+    </form>
+    <div class="success" id="successBox">
+      <h3>תודה!</h3>
+      <p>קיבלנו את הפרטים שלכם — ניצור קשר בהקדם.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+window.ACADEME_CONFIG = { GOOGLE_SCRIPT_URL: "https://script.google.com/macros/s/AKfycbxf-Q-6HYi7tekxIPagx23N8N5wFvWqhgu1aTkOrTNpy9INdFymJCHQdvA78gHNruI2/exec" };
+
+(function () {
+  "use strict";
+  var form = document.getElementById("leadForm");
+  var btn = document.getElementById("btnSubmit");
+  var errorBanner = document.getElementById("errorBanner");
+  var successBox = document.getElementById("successBox");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var data = {
+      form_type: "lead_institution",
+      full_name: form.full_name.value.trim(),
+      institution: form.institution.value.trim(),
+      phone: form.phone.value.trim(),
+      email: form.email.value.trim(),
+      submitted_at: new Date().toISOString(),
+      source: "AcadeMe.Fund - עמוד מוסדות אקדמיים"
+    };
+    var url = window.ACADEME_CONFIG.GOOGLE_SCRIPT_URL;
+    errorBanner.classList.remove("show");
+    btn.disabled = true;
+    btn.textContent = "שולח...";
+
+    if (!url || url.indexOf("PASTE_YOUR_DEPLOYMENT_ID_HERE") !== -1) {
+      console.warn("AcadeMe.Fund: GOOGLE_SCRIPT_URL is not configured yet. Payload:", data);
+      finishSuccess();
+      return;
+    }
+
+    fetch(url, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify(data)
+    })
+      .then(function () { finishSuccess(); })
+      .catch(function (err) {
+        console.error("AcadeMe.Fund lead submit error:", err);
+        errorBanner.classList.add("show");
+        btn.disabled = false;
+        btn.textContent = "שליחה";
+      });
+  });
+
+  function finishSuccess() {
+    form.style.display = "none";
+    successBox.classList.add("show");
+  }
+})();
+</script>
+
+</body>
+</html>
