@@ -32,6 +32,12 @@ export function SiteHeader() {
           <a href="#faq" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
             {t.nav.faq}
           </a>
+          <a href="/institutions.html" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+            למוסדות
+          </a>
+          <a href="/partners.html" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+            לגופים פיננסיים
+          </a>
         </nav>
         <div className="flex items-center gap-2">
           <Button
@@ -44,7 +50,7 @@ export function SiteHeader() {
             <Languages className="h-4 w-4" aria-hidden="true" />
             <span className="text-sm font-semibold">{lang === "he" ? "EN" : "עב"}</span>
           </Button>
-          <a
+          
             href="/coupon"
             className={cn(
               buttonVariants({ size: "sm" }),
