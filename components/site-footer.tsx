@@ -18,7 +18,7 @@ export function SiteFooter() {
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
           {t.footer.links.map((link) => (
-            <a
+            
               key={link}
               href="#"
               className="text-sm text-muted-foreground transition-colors hover:text-foreground"
@@ -26,6 +26,18 @@ export function SiteFooter() {
               {link}
             </a>
           ))}
+          
+            href="/institutions.html"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            למוסדות אקדמיים
+          </a>
+          
+            href="/partners.html"
+            className="text-sm text-muted-foreground transition-colors hover:text-foreground"
+          >
+            לגופים פיננסיים ופילנתרופיים
+          </a>
         </nav>
       </div>
       <div className="border-t border-border py-4">
