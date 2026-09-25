@@ -17,8 +17,8 @@ export function SiteHeader() {
           <a href="#why" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">{t.nav.why}</a>
           <a href="#trust" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">{t.nav.trust}</a>
           <a href="#faq" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">{t.nav.faq}</a>
-          <a href="/institutions.html" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">למוסדות</a>
-          <a href="/partners.html" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">לגופים פיננסיים</a>
+          <a href="/institutions.html" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">למוסדות אקדמיים</a>
+          <a href="/partners.html" className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">לגופים פיננסיים ופילנתרופיים</a>
         </nav>
         <div className="flex items-center gap-2">
           <Button variant="ghost" size="sm" onClick={() => setLang(lang === "he" ? "en" : "he")} className="gap-1.5 text-muted-foreground hover:text-foreground" aria-label={lang === "he" ? "Switch to English" : "החלף לעברית"}>
