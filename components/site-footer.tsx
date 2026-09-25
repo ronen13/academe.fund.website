@@ -13,8 +13,8 @@ export function SiteFooter() {
         <div className="flex flex-col items-center gap-4 md:items-end">
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             {t.footer.links.map((link) => (
-              <a key={link} href={link === "צור קשר" || link === "Contact" ? "mailto:ronench@academe.fund" : "#"} className="text-sm text-muted-foreground transition-colors hover:text-foreground">{link}</a>
-            ))}
+  <a key={link} href={link === "צור קשר" || link === "Contact" || link === "تواصل معنا" ? "mailto:ronench@academe.fund" : "#"} className="text-sm text-muted-foreground transition-colors hover:text-foreground">{link}</a>
+))}
           </nav>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <a href="/institutions.html" className="rounded-full border border-primary px-4 py-1.5 text-xs font-medium text-primary transition-colors hover:bg-primary hover:text-primary-foreground">למוסדות אקדמיים</a>
